@@ -8,6 +8,6 @@ Each sub array in the main 'global_images_array' on the top of the file represen
 4. project_name - name of project
 
 * using the same image twice in the same gallery will break the code.
-
+* dependencies - bootstrap.css, vue.js 2
 
 ENJOY :-)
