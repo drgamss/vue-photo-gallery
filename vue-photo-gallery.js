@@ -59,7 +59,7 @@ var global_images_array = [
 
 
     // eigth gallery object
-  { images_array: ['images/tree.jpg', 'images/bigmikva.jpg', 'images/bigshin.jpg', 'images/connection.jpg', 'images/steps.jpg'],
+  { images_array: ['images/tree.jpg', 'images/bigmikve.jpg', 'images/bigshin.jpg', 'images/connection.jpg', 'images/steps.jpg'],
     thumbnail_image: 'images/connection.jpg',        
     category: '8th Category',
     project_name: '8th Project'},
