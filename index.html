@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Vue JS Photo Gallery" content="">
+    <meta name="Dani_Gamss" content="">
+
+    <title>Vue JS Photo Gallery</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- vue photo gallery styles-->
+    <link rel="stylesheet" type="text/css" href="vue-photo-gallery.css" />
+
+
+</head>
+
+<body>    
+
+    <div id="root">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center"><h2>Multiple Photo Galleries Built with vue.js</h2></div>
+            </div>
+            <div class="row thumbnail-container">
+                <!-- thumbnail -->
+                <div class="col-sm-6 col-lg-4 thumbnail-custom" v-for="gallery in images_array">
+                    <div class="thumbnail text-center" @click="showGalleryModal(gallery.array_index)">
+                        <h4>{{ gallery.category }}</h4>
+                        <h3>{{ gallery.project_name }}</h3>
+                    </div>
+                    <span><img :src="gallery.thumbnail_image" class="img-responsive"></span>
+                </div>
+                <!-- thumbnail -->
+            </div>
+        </div>
+        <!-- modal component -->
+        <transition name="fade">
+        <gallery-modal v-if="showModal" v-on:closemodal="closeModal" :image-array="current_array"></gallery-modal>
+        </transition>
+        <!-- modal component -->
+
+    </div>
+
+    <!-- modal component template!!! no need to change stuff here unless you want to change markup or design -->
+    <script type="text/x-template" id="photo-gallery-template">
+        <div class="black-bg">
+            <span @click="closeModal" class="fa-close-container">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="image-container">
+                            <div class="large-image-container">
+                                <span @click="moveToPreviousImage">
+                                    <i class="fa fa-angle-left"></i>
+                                </span>                             
+                                <img :src="current_image" class="img-responsive">
+                                <span @click="moveToNextImage"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                <span class="label label-primary indicator">{{ current_index }}/{{ total }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </script>   
+    <!-- modal component template!!! no need to change stuff here unless you want to change markup or design -->
+
+
+    <!-- vue core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.3/vue.js"></script>
+    <!-- vue photo gallery -->
+    <script src="vue-photo-gallery.js"></script>
+
+</body>
+
+</html>
