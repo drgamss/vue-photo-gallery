@@ -10,45 +10,65 @@
 
 var global_images_array = [
   // first gallery object
-  { images_array: ['images/bigcleansing.jpg', 'images/bigeye.jpg', 'images/bigfreechoice.jpg', 'images/bigminian.jpg', 'images/bigtree.jpg'],
+  { images_array: ['images/bigcleansing.jpg', 'images/bigeye.jpg', 'images/bigfreechoice.jpg', 'images/bigminian.jpg', 'images/steps.jpg'],
     thumbnail_image: '',
-    category: 'First Cotegory',
-    project_name: 'First Project'},
+    category: '1st Cotegory',
+    project_name: '1st Project'},
 
 
     // second gallery object
-  { images_array: ['images/sinai.jpg', 'images/bigcleansing.jpg', 'images/bigeye.jpg', 'images/bigfreechoice.jpg', 'images/bigminian.jpg'],
+  { images_array: ['images/sinai.jpg', 'images/tree.jpg', 'images/bigeye.jpg', 'images/bigfreechoice.jpg', 'images/bigminian.jpg'],
     thumbnail_image: '',  
-    category: 'Second Category',
-    project_name: 'Second Project'}, 
+    category: '2nd Category',
+    project_name: '2nd Project'}, 
 
 
     // third gallery object       
-  { images_array: ['images/bigeye.jpg', 'images/bigcleansing.jpg', 'images/bigfreechoice.jpg', 'images/bigminian.jpg', 'images/bigtree.jpg'],
+  { images_array: ['images/bigeye.jpg', 'images/bigcleansing.jpg', 'images/bigfreechoice.jpg', 'images/tree.jpg', 'images/steps.jpg'],
     thumbnail_image: '',        
-    category: 'Third Category',
-    project_name: 'Third Project'},
+    category: '3rd Category',
+    project_name: '3rd Project'},
 
 
     // fourth gallery object
-  { images_array: ['images/bigfreechoice.jpg', 'images/bigcleansing.jpg', 'images/bigeye.jpg', 'images/bigtree.jpg', 'images/bigminian.jpg'],
+  { images_array: ['images/bigfreechoice.jpg', 'images/tree.jpg', 'images/bigeye.jpg', 'images/steps.jpg', 'images/bigminian.jpg'],
     thumbnail_image: '',        
-    category: 'Fourth Category',
-    project_name: 'Fourth Project'}, 
+    category: '4th Category',
+    project_name: '4th Project'}, 
 
 
     // fifth gallery object
-  { images_array: ['images/bigtree.jpg', 'images/bigeye.jpg', 'images/bigfreechoice.jpg', 'images/bigminian.jpg', 'images/bigcleansing.jpg'],
+  { images_array: ['images/steps.jpg', 'images/bigeye.jpg', 'images/connection.jpg', 'images/bigminian.jpg', 'images/free.jpg'],
     thumbnail_image: '',        
-    category: 'Fifth Category',
-    project_name: 'Fifth Project'},
+    category: '5th Category',
+    project_name: '5th Project'},
 
 
     // sixth gallery object
-  { images_array: ['images/bigminian.jpg', 'images/bigcleansing.jpg', 'images/bigeye.jpg', 'images/bigfreechoice.jpg', 'images/bigtree.jpg'],
+  { images_array: ['images/bigminian.jpg', 'images/bigcleansing.jpg', 'images/bigshin.jpg', 'images/bigfreechoice.jpg', 'images/steps.jpg'],
     thumbnail_image: '',        
-    category: 'Sixth Category',
-    project_name: 'Sixth Project'}           
+    category: '6th Category',
+    project_name: '6th Project'} ,
+
+
+    // seventh gallery object
+  { images_array: ['images/tree.jpg', 'images/bigcleansing.jpg', 'images/bigeye.jpg', 'images/bigfreechoice.jpg', 'images/steps.jpg'],
+    thumbnail_image: 'images/bigmikve.jpg',        
+    category: '7th Category',
+    project_name: '7th Project'},
+
+
+    // eigth gallery object
+  { images_array: ['images/tree.jpg', 'images/bigmikva.jpg', 'images/bigshin.jpg', 'images/connection.jpg', 'images/steps.jpg'],
+    thumbnail_image: 'images/connection.jpg',        
+    category: '8th Category',
+    project_name: '8th Project'},
+
+    // ninth gallery object
+  { images_array: ['images/tree.jpg', 'images/connection.jpg', 'images/bigeye.jpg', 'images/bigfreechoice.jpg', 'images/steps.jpg'],
+    thumbnail_image: 'images/bigshin.jpg',        
+    category: '9th Category',
+    project_name: '9th Project'}                          
 ];
 
 
