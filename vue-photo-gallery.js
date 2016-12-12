@@ -65,6 +65,7 @@ var global_images_array = [
     category: '8th Category',
     project_name: '8th Project'},
 
+  
     // ninth gallery object
   { images_array: ['images/tree.jpg', 'images/connection.jpg', 'images/bigeye.jpg', 'images/bigfreechoice.jpg', 'images/steps.jpg'],
     thumbnail_image: 'images/bigshin.jpg',        
