@@ -48,6 +48,13 @@
     margin:auto;
     text-align: center;    
 }
+#root .large-image-container img {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;   
+}
 #root .indicator {
     font-size: 14px;
     margin-top: 20px;
