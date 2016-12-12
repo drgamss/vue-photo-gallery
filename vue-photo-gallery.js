@@ -5,7 +5,7 @@
 // 2. thumbnail_image - if image not specified the thumbnail image will be the first image in images_array.
 // 3. category - name of category
 // 4. project_name - name of project
-// You can have a many or as little galleries as you want. Just add/remove objects from the global_images_array.  
+// You can have as many or as little galleries as you want. Just add/remove objects from the global_images_array.  
 // Thats it, Nothing else is needed :-)
 
 
