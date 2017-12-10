@@ -62,11 +62,11 @@
                     <div class="col-md-10">
                         <div class="image-container">
                             <div class="large-image-container">
-                                <span @click="moveToPreviousImage">
+                                <span @click="moveToPreviousImageClick">
                                     <i class="fa fa-angle-left"></i>
                                 </span>                             
                                 <img :src="current_image" class="img-responsive">
-                                <span @click="moveToNextImage"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                <span @click="moveToNextImageClick"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
                                 <span class="label label-primary indicator">{{ current_index }}/{{ total }}</span>
                             </div>
                         </div>
