@@ -101,26 +101,44 @@ Vue.component('gallery-modal', {
     }
   },
   methods: {
-    moveToPreviousImage: function(){
-      if(this.images_array.indexOf(this.current_image) === 0){
-          var next_index = this.images_array.length - 1;
-          this.current_image = this.images_array[next_index]; 
-      } else {
-          var next_index = this.images_array.indexOf(this.current_image) - 1;
-          this.current_image = this.images_array[next_index];            
-      }     
-    },    
-    moveToNextImage: function(){
-      if(this.images_array.length === (this.images_array.indexOf(this.current_image) + 1)){
-          this.current_image = this.images_array[0];                            
-      } else {
-          var new_index = this.images_array.indexOf(this.current_image) + 1;
-          this.current_image = this.images_array[new_index];           
-      }
-    },
-    closeModal: function(){
-      this.$emit('closemodal');
-    }
+        showingFirstImage: function(){
+            return this.images_array.indexOf(this.current_image) === 0;
+        },
+        showingLastImage: function(){
+            return this.images_array.length === (this.images_array.indexOf(this.current_image) + 1);
+        },
+        goToFirstImage: function(){
+            this.current_image = this.images_array[0];  
+        },
+        goToLastImage: function(){
+            var next_index = this.images_array.length - 1;
+            this.current_image = this.images_array[next_index];            
+        },
+        jumpForward: function(){
+            var next_index = this.images_array.indexOf(this.current_image) + 1;
+            this.current_image = this.images_array[next_index];             
+        },
+        jumpBack: function(){
+            var next_index = this.images_array.indexOf(this.current_image) - 1;
+            this.current_image = this.images_array[next_index];            
+        },
+        moveToPreviousImageClick: function(){
+          if(this.showingFirstImage()){              
+              this.goToLastImage() 
+          } else {              
+                this.jumpBack() 
+          }     
+        },    
+        moveToNextImageClick: function(){
+          if(this.showingLastImage()){            
+                this.goToFirstImage()
+          } else {
+              this.jumpForward()          
+          }
+        },
+        closeModal: function(){
+          this.$emit('closemodal');
+        }
   }  
 })
 
